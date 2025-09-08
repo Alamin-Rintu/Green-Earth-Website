@@ -11,7 +11,6 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <header class="bg-[#15803D] px-10">
@@ -87,7 +86,7 @@
         <button
           class="btn btn-outline btn-primary bg-[#FACC15] text-[#15803D] rounded-3xl px-4 sm:px-6 text-sm sm:text-base"
         >
-          Plant a Tree
+          Get Involved
         </button>
       </div>
       <div class="flex-1 flex justify-center">
@@ -98,6 +97,28 @@
         />
       </div>
     </section>
+
+    <!-- tress Choose section-->
+    <section class="grid grid-cols-12 gap-6 w-full bg-[#F0FDF4] p-4">
+       <div class="col-span-12 text-center mb-6">
+    <h1 class="text-3xl font-bold text-black">Choose Your Trees</h1>
+  </div>
+  <aside class="col-span-12 md:col-span-2 p-4 rounded-xl bg-[#F0FDF4] md:block hidden">
+    <h2 class="font-bold mb-4">Categories</h2>
+    <ul id="category-list" class="space-y-2"></ul>
+  </aside>
+
+  <div id="trees-container" class="col-span-12 md:col-span-8 p-4 rounded-xl bg-white">
+    <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+  </div>
+
+  <aside class="col-span-12 md:col-span-2 p-4 rounded-xl bg-white">
+    <h2 class="font-bold mb-4">Cart</h2>
+    <ul id="cart-list" class="space-y-2"></ul>
+    <div class="mt-4 font-semibold">Total: ৳<span id="total-price">0</span></div>
+  </aside>
+</section>
+
 
     <!-- about section -->
     <section class="bg-[#F0FDF4] py-12">
@@ -208,6 +229,22 @@
       </p>
     </footer>
 
-    <script src="script/script.js"></script>
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="tree-details-container">
+          
+        </div>
+
+        <div class="modal-action">
+          <form method="dialog">
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="./script/script.js"></script>
   </body>
 </html>

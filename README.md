@@ -21,7 +21,7 @@ filter(): Selects only which element those are match a condition.
 In ES6, destructuring assignment allows us to extract values from an array or object directly into variables using a short and concise syntax.
 
 5) Explain template literals in ES6. How are they different from string concatenation?
-template literals in ES6 are allow to
+Template literals in ES6 are allow to
 a. Multi-line strings.
 b. String interpolation
 c.Embedded expressions
